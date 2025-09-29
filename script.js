@@ -24,8 +24,14 @@ form.addEventListener("submit", function(e) {
   let valid = true;
 
   // Clear errors
-  document.querySelectorAll(".error").forEach(el => el.textContent = "");
+document.querySelectorAll(".error").forEach(el => {
+  el.textContent = "";            
+});
+feedback.textContent = "";         
+
+if (feedback) {
   feedback.textContent = "";
+}
 
   // Validation
   if (!firstName) {
