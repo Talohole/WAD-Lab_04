@@ -81,16 +81,24 @@ button {
 /* Search bar */
 .search-section {
   text-align: center;
-  margin: 20px;
+  margin: 24px;                              
 }
 
 .search-section input {
-  padding: 8px;
+  padding: 10px;                             
   width: 70%;
-  max-width: 300px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+  max-width: 320px;                            
+  border-radius: 8px;                         
+  border: 1px solid #bbb;                       
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;  
 }
+
+.search-section input:focus {
+  border-color: #5b9fff;
+  box-shadow: 0 0 4px rgba(91, 159, 255, 0.4);   
+  outline: none;
+}
+
 
 /* Cards layout */
 .cards {
