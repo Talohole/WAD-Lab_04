@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration → Profile Cards</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Student Registration</h1>
+
+  <!-- Registration Form -->
+  <form id="registrationForm" novalidate>
+    <label for="firstName">First Name</label>
+    <input type="text" id="firstName" required>
+    <span class="error" id="firstNameError"></span>
+
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" required>
+    <span class="error" id="lastNameError"></span>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" required>
+    <span class="error" id="emailError"></span>
+
+    <!-- Programme Dropdown -->
+    <label for="programme">Programme</label>
+    <select id="programme" required>
+      <option value="">Select Programme</option>
+      <option value="Computer Science">Computer Science</option>
+      <option value="Information Systems">Information Systems</option>
+      <option value="Software Engineering">Software Engineering</option>
+      <option value="Data Science">Data Science</option>
+      <option value="Cyber Security">Cyber Security</option>
+    </select>
+    <span class="error" id="programmeError"></span>
+
+    <label for="year">Year</label>
+    <select id="year" required>
+      <option value="">Select Year</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+    <span class="error" id="yearError"></span>
+
+    <label for="interests">Interests</label>
+    <textarea id="interests"></textarea>
+
+    <label for="photo">Photo URL</label>
+    <input type="url" id="photo" placeholder="http://example.com/photo.jpg">
+    <span class="error" id="photoError"></span>
+
+    <button type="submit" class="btn-main">Register</button>
+    <div id="feedback" aria-live="polite"></div>
+  </form>
+
+  <!-- Search Bar with Button -->
+  <div class="search-section">
+    <input type="text" id="searchInput" placeholder="Search student...">
+    <button id="searchBtn" class="btn-main">Search</button>
+    <button id="resetBtn" class="btn-secondary">Reset</button>
+  </div>
+
+  <!-- Profile Cards -->
+  <h2>Profile Cards</h2>
+  <div class="cards" id="cardsContainer"></div>
+
+  <!-- Summary Table -->
+  <h2>Summary Table</h2>
+  <table id="summaryTable">
+    <thead>
+      <tr>
+        <th>Full Name</th>
+        <th>Email</th>
+        <th>Programme</th>
+        <th>Year</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>

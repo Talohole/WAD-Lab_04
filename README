@@ -1,0 +1,30 @@
+  Project by Tuyeimo Nangobe.
+
+## Overview  
+This project is a student registration system built with HTML, CSS, and JavaScript.  
+It allows users to register with details (name, email, programme, year, interests, photo), and then displays:  
+- A profile card for each student.  
+- A summary table with the same information.  
+
+## Features
+- Accessible registration form with inline validation.  
+- Profile cards and summary table update dynamically.  
+- Remove and Edit functionalities.  
+- Search and Reset options to filter students.  
+- Programme field as a dropdown (e.g., Computer Science, IT, etc.).  
+- Mobile-friendly responsive design.  
+- Navy blue themed buttons.  
+
+## How to Use  
+1. Open `index.html` in your browser.
+2. Fill out the registration form and click Register.  
+3. A profile card and table row will appear.  
+4. Use Search to find students and Reset to show all.  
+5. Use Edit to update a profile and Remove to delete one.  
+
+##  Files  
+- `index.html` → Main structure of the app.  
+- `style.css` → Styling and responsive layout.
+- `script.js` → Logic for validation, rendering, search, edit, and remove.
+
+

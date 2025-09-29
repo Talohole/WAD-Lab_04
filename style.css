@@ -1,0 +1,161 @@
+/* General layout */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #ffffff;
+  color: #333;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #0a1f44;
+}
+
+/* Center form */
+form {
+  max-width: 500px;
+  margin: 0 auto 30px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px #000000 (0,0,0,0.1);
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+/* Button styles */
+.btn-main {
+  background: navy;
+  color: #ffffff;
+}
+
+.btn-main:hover {
+  background: #001f5c;
+}
+
+.btn-secondary {
+  background: #6c757d;
+  color: #ffffff;
+}
+
+.btn-secondary:hover {
+  background: #5a6268;
+}
+
+/* Errors and feedback */
+.error {
+  color: red;
+  font-size: 13px;
+}
+
+#feedback {
+  margin-top: 10px;
+  font-weight: bold;
+  color: green;
+  text-align: center;
+}
+
+/* Search bar */
+.search-section {
+  text-align: center;
+  margin: 20px;
+}
+
+.search-section input {
+  padding: 8px;
+  width: 70%;
+  max-width: 300px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Cards layout */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Table */
+table {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background: #ffffff;
+}
+
+/* Navy action buttons */
+.remove-btn, .edit-btn {
+  background: navy;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 2px;
+  transition: 0.3s;
+}
+
+.remove-btn:hover, .edit-btn:hover {
+  background: #001f5c;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  form, table {
+    font-size: 14px;
+  }
+}
