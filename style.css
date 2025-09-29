@@ -138,20 +138,24 @@ th {
 }
 
 /* Navy action buttons */
-.remove-btn, .edit-btn {
+.remove-btn,
+.edit-btn {
   background: navy;
   color: white;
   border: none;
-  padding: 6px 12px;
-  border-radius: 6px;
+  padding: 6px 14px;                 
+  border-radius: 8px;                
   cursor: pointer;
   margin: 2px;
-  transition: 0.3s;
+  transition: background-color 0.3s ease, transform 0.2s ease; 
 }
 
-.remove-btn:hover, .edit-btn:hover {
-  background: #001f5c;
+.remove-btn:hover,
+.edit-btn:hover {
+  background-color: #001f4d;         
+  transform: translateY(-1px);       
 }
+
 
 /* Responsive */
 @media (max-width: 600px) {
